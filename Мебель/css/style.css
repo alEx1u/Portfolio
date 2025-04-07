@@ -1,0 +1,171 @@
+:root {
+  --maincolor:#212529;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.eot");
+  src: local("Helvetica"), url("../fonts/Helvetica.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica.woff2") format("woff2"), url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Oblique.eot");
+  src: local("Helvetica Oblique"), local("Helvetica-Oblique"), url("../fonts/Helvetica-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Oblique.woff2") format("woff2"), url("../fonts/Helvetica-Oblique.woff") format("woff"), url("../fonts/Helvetica-Oblique.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-BoldOblique.eot");
+  src: local("Helvetica Bold Oblique"), local("Helvetica-BoldOblique"), url("../fonts/Helvetica-BoldOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-BoldOblique.woff2") format("woff2"), url("../fonts/Helvetica-BoldOblique.woff") format("woff"), url("../fonts/Helvetica-BoldOblique.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Light.eot");
+  src: local("Helvetica Light"), local("Helvetica-Light"), url("../fonts/Helvetica-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Light.woff2") format("woff2"), url("../fonts/Helvetica-Light.woff") format("woff"), url("../fonts/Helvetica-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-Bold.eot");
+  src: local("Helvetica Bold"), local("Helvetica-Bold"), url("../fonts/Helvetica-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Bold.woff2") format("woff2"), url("../fonts/Helvetica-Bold.woff") format("woff"), url("../fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-LightOblique.eot");
+  src: local("Helvetica Light Oblique"), local("Helvetica-LightOblique"), url("../fonts/Helvetica-LightOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-LightOblique.woff2") format("woff2"), url("../fonts/Helvetica-LightOblique.woff") format("woff"), url("../fonts/Helvetica-LightOblique.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: var(--maincolor);
+  line-height: 140%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--maincolor);
+  text-decoration: none;
+}
+
+.h2 {
+  font-family: Helvetica;
+  font-size: 48px;
+}
+
+.container {
+  padding: 0 32px;
+}
+
+.header {
+  padding-top: 12px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header-wrapper .logo {
+  width: 70px;
+  height: auto;
+  display: flex;
+}
+.header-wrapper .logo svg {
+  width: 100%;
+  height: auto;
+}
+.header-wrapper-right {
+  display: flex;
+  gap: 207px;
+  align-items: flex-start;
+}
+.header-wrapper-right .nav .ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+}
+.header-link {
+  font-size: 18px;
+  text-decoration: none;
+  line-height: auto;
+}
+
+.offer-section {
+  margin-top: 40px;
+}
+.offer-section-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.offer-section-wrapper .h1 {
+  font-size: 72px;
+  line-height: 120%;
+  font-weight: 400;
+  max-width: 794px;
+  text-transform: uppercase;
+  font-family: "Helvetica", sans-serif;
+}
+.offer-section-wrapper .order {
+  border-bottom: 1px solid var(--maincolor);
+  padding-bottom: 2px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.fs-description-sect {
+  margin-top: 40px;
+}
+.fs-description-sect-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 100px;
+}
+.fs-description-sect-wrapper .left-side {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  max-width: 445px;
+}
+.fs-description-sect-wrapper .left-side .text {
+  font-size: 20px;
+}
+.fs-description-sect-wrapper .left-side .img {
+  width: 329px;
+  height: 493px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fs-description-sect-wrapper .right-side {
+  display: flex;
+}
+.fs-description-sect-wrapper .right-side .img {
+  width: 678px;
+  height: 809px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
